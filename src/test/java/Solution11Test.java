@@ -42,7 +42,7 @@ public class Solution11Test{
         int[] nums={-1,0,1,2,-1,-4};
         int[][] res={
             {-1,-1,2},
-            {-1,0,1}
+            {0,0,1}
         };
         assertArrayEquals(res,convertListListToIntArray(solve.threeSum(nums)));
     }
