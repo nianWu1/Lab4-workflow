@@ -57,6 +57,6 @@ jobs:
           # Assuming your default branch is 'main'
           git config user.name "nianWu1"
           git config user.email "422157548@qq.com"
-          git checkout main
+          git checkout master
           git merge --ff-only ${{ github.event.before }}
-          git push origin main
+          git push origin master
