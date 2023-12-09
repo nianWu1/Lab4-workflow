@@ -51,8 +51,6 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Run tests with Maven
         run: mvn -B test --file pom.xml
-      - name: Auto-Merge Pull Request
-        uses: reitermarkus/automerge@v2.6.0
-        with:
-          token: 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
-          dry-run: false
+      - name: Merge pull requests (automerge-action)
+        uses: pascalgn/automerge-action@v0.15.6
+
