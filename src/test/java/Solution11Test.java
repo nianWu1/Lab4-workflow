@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  * 是否有结果，结果是否为多个
  * 边界值：全为0的情况
  */
-public class L2021110980_11_Test{
+public class Solution11Test{
     public static int[][] convertListListToIntArray(List<List<Integer>> listOfLists) {
         return listOfLists.stream()
             .map(list -> list.stream().mapToInt(Integer::intValue).toArray())
