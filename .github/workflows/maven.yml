@@ -53,4 +53,5 @@ jobs:
         run: mvn -B test --file pom.xml
       - name: Merge pull requests (automerge-action)
         uses: pascalgn/automerge-action@v0.15.6
-
+        env:
+          GITHUB_TOKEN: "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"
