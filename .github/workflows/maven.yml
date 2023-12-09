@@ -58,6 +58,6 @@ jobs:
           cd $GITHUB_WORKSPACE
           git config user.name "nianWu1"
           git config user.email "422157548@qq.com"
-          git checkout master
+          git checkout ${{ github.base_ref }}
           git merge --ff-only ${{ github.event.before }}
-          git push origin master
+          git push origin ${{ github.base_ref }}
